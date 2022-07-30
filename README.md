@@ -16,6 +16,7 @@ create `/events/ready.ts`
 // imports
 import Client from "../libs/client";
 import Event from "../structures/Event";
+import { Events } from "discord.js";
 
 export default class Ready implements Event {
   client: Client;
@@ -43,7 +44,6 @@ example
 import Client from "../libs/client";
 import Event, { CustomEvents } from "../structures/Event";
 import { TextChannel } from "discord.js";
-import { CustomEvents } from "../typings";
 
 export default class SongRequest implements Event {
   client: Client;
